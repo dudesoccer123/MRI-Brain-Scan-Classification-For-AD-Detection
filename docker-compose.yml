@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  alzheimer-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    container_name: alzheimer-diagnosis-apps
