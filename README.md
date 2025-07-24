@@ -10,11 +10,22 @@ An AI-powered web application for classifying Alzheimer's Disease from brain sca
 - Confidence scores and detailed analysis
 - Interactive visualizations
 
-- ## How to Run
-1. Install requirements: `pip install -r requirements.txt`
-2. Run the app: `streamlit run app.py`
-3. Upload a .nii brain scan file for MRI
-4. Click "Analyze Brain Scan" to get results
+## How to Run the App
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/dudesoccer123/MRI-Brain-Scan-Classification-For-AD-Detection.git
+cd MRI-Brain-Scan-Classification-For-AD-Detection
+```
+### 2. Build and Run Using Docker Compose
+```
+docker-compose up --build
+```
+### 3. Use the App
+- Open your browser and go to http://localhost:8501
+- Upload a .nii brain scan file (MRI)
+- Click "Analyze Brain Scan" to get results
 
 ## Medical Disclaimer
 ⚠️ This tool is for research purposes only and should not be used as a substitute for professional medical diagnosis.
